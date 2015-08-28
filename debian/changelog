@@ -1,3 +1,9 @@
+omnitty (0.3.0-1+brew1) unstable; urgency=medium
+
+  * d/patches: Fix ncurses linking
+
+ -- Zhong Jianxin <azuwis@gmail.com>  Fri, 28 Aug 2015 13:57:26 +0800
+
 omnitty (0.3.0-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
