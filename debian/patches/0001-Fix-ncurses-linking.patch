@@ -1,0 +1,21 @@
+From: Zhong Jianxin <azuwis@gmail.com>
+Date: Fri, 28 Aug 2015 13:55:50 +0800
+Subject: Fix ncurses linking
+
+---
+ Makefile.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.in b/Makefile.in
+index 5329cee..aad114b 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -15,7 +15,7 @@ mandir=@mandir@
+ CFLAGS+=-DOMNITTY_VERSION=\"$(OMNITTY_VERSION)\"
+ 
+ omnitty: $(objects)
+-	$(CC) $(CFLAGS) -o omnitty $(objects) $(LDFLAGS) $(LIBS)
++	$(CC) $(CFLAGS) -o omnitty $(objects) $(LDFLAGS) $(LIBS) -lncurses
+ 
+ -include .depends
+ 
